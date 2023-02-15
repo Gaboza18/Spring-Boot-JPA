@@ -20,7 +20,7 @@ public class MemberRepository {
     }
 
     // 단건조회
-    public Member fineOne(Long id){
+    public Member findOne(Long id){
         return em.find(Member.class, id);
     }
 
@@ -36,4 +36,5 @@ public class MemberRepository {
                 .setParameter("name", name)
                 .getResultList();
     }
+
 }

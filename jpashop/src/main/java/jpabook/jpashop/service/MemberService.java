@@ -39,7 +39,7 @@ public class MemberService {
 
     // 회원 단건 조회
     public Member findOne(Long memberId){
-        return memberRepository.fineOne(memberId);
+        return memberRepository.findOne(memberId);
     }
 
 }
